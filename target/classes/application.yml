@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    username: root
+    password: cm021035
+    url: jdbc:mysql://127.0.0.1:3306/sale?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:com/chen/mapper/*.xml
+  type-aliases-package: com.chen.dao
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
